@@ -1,0 +1,76 @@
+
+.header {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+
+.header__logo {
+    width: 100px;
+    margin: 0 20px;
+    margin-top: 18px;
+    object-fit: contain;
+
+}
+
+
+.header__search {
+    display: flex;
+    flex: 1;
+}
+
+.header__searchInput:focus {
+    outline: none;
+}
+
+.header__searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header__search > .MuiSvgIcon-root {
+    padding: 5px;
+    height: 22px !important;
+    background-color: orange !important;
+}
+
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+}
+
+.header__options {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.header__optionsLineOne {
+    font-size: 10px;
+}
+
+.header__optionsLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header__basketSpace{
+    display: flex;
+    align-items: center;
+}
+
+.header__basketCount{
+
+    margin: 0 10px;
+}
