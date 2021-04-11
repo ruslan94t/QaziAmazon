@@ -1,13 +1,16 @@
 import React from "react";
+
+import './App.css';
+import Header from "./Header/Header";
+import Home from "./Home/Home";
+import Checkout from "./Checkout/Checkout";
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 
 } from "react-router-dom";
-import './App.css';
-import Header from "./Header/Header";
-import Home from "./Home/Home";
 
 function App() {
   return (
@@ -15,7 +18,8 @@ function App() {
     <div className="app">
       <Switch>
         <Route path="/checkout">
-        <h2>Checkout Page</h2>
+          <Header />
+        <Checkout />
         </Route>
         <Route path="/login">
         <h2>Login Paga</h2>

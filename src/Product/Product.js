@@ -1,8 +1,25 @@
 import React from 'react';
 import './Product.css'
+import {useStateValue} from "../redux/StateProvider";
 
 
 function Product({id, title, price, rating, image}) {
+
+    const [{basket}, dispatch] = useStateValue();
+    const addToBasket = ()=>{
+//add item to basket ...
+        dispatch({
+            type:'ADD_TO_BASKET',
+            item:{
+                id,
+                title,
+                price,
+                rating,
+                image
+            }
+        })
+    };
+
     return (
         <div className='product'>
             <div className="product__info">
@@ -25,7 +42,7 @@ function Product({id, title, price, rating, image}) {
                 </div>
             </div>
             <img src={image}/>
-            <button>Add Bascket</button>
+            <button onClick={addToBasket}>Add Bascket</button>
 
 
         </div>

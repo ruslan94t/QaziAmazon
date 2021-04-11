@@ -1,0 +1,16 @@
+
+
+
+
+
+
+.checkout{
+
+}
+
+.checkout__ad{
+width: 100%;
+    object-fit: contain;
+    margin-bottom: -180px;
+    z-index: -1;
+}
